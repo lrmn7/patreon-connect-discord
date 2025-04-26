@@ -1,0 +1,59 @@
+{
+  "name": "patreon-connect-discord",
+  "version": "1.0.0",
+  "description": "patreon-connect-discord is a Node.js package that connects Patreon and Discord, allowing you to automatically manage Discord roles based on your users' Patreon membership status. perfect for giving special access to your premium supporters in real-time.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "patreon",
+    "discord",
+    "membership",
+    "events",
+    "webhook",
+    "integration",
+    "oauth",
+    "roles",
+    "bot"
+  ],
+  "author": "lrmn7",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@types/events": "^3.0.3",
+    "@types/node": "^22.13.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "events": "^3.3.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lrmn7/patreon-connect-discord.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lrmn7/patreon-connect-discord/issues"
+  }
+}
